@@ -1,0 +1,120 @@
+/* @theme slides */
+
+@import 'default';
+
+:root {
+    --color-white: white;/*rgb(250,250,250);*/
+    --color-main: rgb(84, 214, 160);
+    --color-dark: rgb(30, 64, 50);
+    --color-contrast: rgb(242, 80, 190);
+    --color-grey: rgb(220,220,220);
+    --color-black: rgb(0,0,0);
+}
+
+section{
+    padding-top: 130px;
+/*    background-color: var(--color-contrast);*/
+}
+
+
+h1 { /* presentation title */
+    color: var(--color-dark);
+}
+
+h2 { /* frame title */
+    font-size: 28pt;
+    padding: 20px 20px;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-grey);
+}
+
+section>h2:first-of-type { /* frame title */
+    position: fixed;
+    top: 18px;
+    right: 12px;
+    width: 1210px;
+    padding: 20px 20px;
+    background-color: var(--color-grey);
+}
+
+h3 { /* in frame titles */
+    color: var(--color-main);
+}
+
+h4 { /* Centered emphased remark */
+    color: var(--color-main);
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li::before {
+    content: "\25B6";
+    color: var(--color-contrast);
+    display: inline-block;
+    width: 26pt;
+    margin-left: -26px;
+}
+
+ul ul li::before, ol ul li::before {
+    content: "\25AC";
+    color: var(--color-grey);
+    display: inline-block;
+    width: 26pt;
+    margin-left: -30px;
+}
+
+strong{
+    color: var(--color-dark);
+}
+
+em{
+    color: var(--color-main);
+}
+
+img {
+    margin: 10px auto 20px;
+    display: block;
+}
+
+/*To split in column...*/
+.line{
+    width: 1124px;
+    /*width: 840pt; */
+    margin: 0pt;
+}
+div{
+    margin: 0px;
+    padding: 0px;
+}
+
+.line>div{
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.line>div:not(:first-child) {
+    margin-left: 16px;
+}
+
+.one2 {
+    width: 550px;
+}
+
+.one3 {
+    width: 358px;
+}
+
+.two3 {
+    width: 742px;
+}
+
+.one4 {
+    width: 262px;
+}
+
+.tree4 {
+    width: 833px;
+}

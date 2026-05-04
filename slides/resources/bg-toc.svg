@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="170mm"
+   width="300mm"
+   version="1.1"
+   viewBox="0 0 1062.9968 602.36221"
+   id="svg198"
+   sodipodi:docname="bg-toc.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata204">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs202" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1043"
+     id="namedview200"
+     showgrid="false"
+     fit-margin-top="6"
+     fit-margin-left="6"
+     fit-margin-right="6"
+     fit-margin-bottom="6"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="782.0601"
+     inkscape:cy="181.01934"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g192"
+     units="mm"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm" />
+  <g
+     transform="matrix(0.82873288,0,0,0.82873288,-190.83917,226.67821)"
+     id="g196"
+     style="stroke-width:1.20666134">
+    <g
+       id="g349"
+       transform="matrix(0.91689896,0,0,0.91689896,810.2285,2.918642)"
+       style="stroke-width:1.3160243">
+      <g
+         style="stroke-width:0.74052739"
+         id="g194"
+         transform="matrix(1.7462401,0,0,-1.7462401,-1005.325,1008.4537)">
+        <g
+           style="stroke-width:0.74052739"
+           id="g192"
+           transform="matrix(0.39992,0,0,0.39992,630.51,227.03)">
+          <rect
+             style="fill:#d5d5d5;stroke-width:1.33545;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:1"
+             id="rect928"
+             width="1995.8158"
+             height="1127.2927"
+             x="-1039.0684"
+             y="-1304.1571"
+             transform="scale(1,-1)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

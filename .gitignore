@@ -1,0 +1,57 @@
+# Local configuration
+#-----------------
+config.toml
+
+# Submodules
+#-----------------
+
+# Generated
+#-----------------
+site
+
+# System
+#-----------------
+*.log
+.vscode
+build
+dpd
+external
+lost+found
+*~
+~*
+
+# Latex:
+#-----------------
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.spl
+*.synctex.gz
+*.tex~
+
+# python:
+#-----------------
+*.pyc
+__pycache__/
+
+# c/c++:
+#-----------------
+*.o
+
+# pharo:
+#-----------------
+pharo
+pharo-ui
+pharo-vm
+pharo-local
+PharoDebug.log
+*.sources
+*.changes
+
+
