@@ -1,0 +1,18 @@
+launch:
+# Arguments that can be set from the command line :
+- arg: {name: "world", default: "office", description: "tiled_test world name"}
+- arg: {name: 'enforce_prefixes', default: 'false', description: 'on true a prefixes are used for a single robot environment'}
+- arg: {name: 'use_static_transformations', default: 'true', description: 'Use static transformations for sensor frames!'}
+- arg: {name: 'one_tf_tree', default: 'false', description: 'on true all tfs are published with a namespace on /tf and /tf_static'}
+- arg: {name: "world_file", default: "$(find-pkg-share tiled_test)/world/$(var world).world", description: "World file"}
+
+# Nodes to launch :
+- node:
+    name: "simulator"
+    pkg:  "stage_ros2"
+    exec: "stage_ros2"
+    param:
+    - {name: "one_tf_tree", value: "$(var one_tf_tree)"}
+    - {name: "enforce_prefixes", value: "$(var enforce_prefixes)"}
+    - {name: "use_static_transformations", value: "$(var use_static_transformations)"}
+    - {name: "world_file", value: "$(var world_file)"}
