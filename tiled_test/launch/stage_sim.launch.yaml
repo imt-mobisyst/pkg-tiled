@@ -6,7 +6,13 @@ launch:
 - arg: {name: 'one_tf_tree', default: 'false', description: 'on true all tfs are published with a namespace on /tf and /tf_static'}
 - arg: {name: "world_file", default: "$(find-pkg-share tiled_test)/world/$(var world).world", description: "World file"}
 
-# Nodes to launch :
+# TF Static repeater :
+- node:
+    name: "static_tf_repeater"
+    pkg: "basic_node"
+    exec: "tf_repeater"
+
+# Stage Simulator with shunted tf_static :
 - node:
     name: "simulator"
     pkg:  "stage_ros2"
@@ -16,3 +22,22 @@ launch:
     - {name: "enforce_prefixes", value: "$(var enforce_prefixes)"}
     - {name: "use_static_transformations", value: "$(var use_static_transformations)"}
     - {name: "world_file", value: "$(var world_file)"}
+    remap:
+    - from: "base_scan"
+      to: "scan"
+    - from: "tf_static"
+      to: "tf_lymbes"
+
+
+# Clear robot config (to do with an URDF...)
+- node:
+    name: "base_footprint_frame"
+    pkg: "tf2_ros"
+    exec: "static_transform_publisher"
+    args: "0 0 -0.1 0 0 0 base_footprint base_link"
+
+- node:
+    name: "laser_frame"
+    pkg: "tf2_ros"
+    exec: "static_transform_publisher"
+    args: "0.15 0 0.1 0 0 0 laser base_link"

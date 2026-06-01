@@ -1,0 +1,32 @@
+launch:
+
+# Include basic Tiago simulation
+- include:
+    file: "$(find-pkg-share webots_ros2_turtlebot)/launch/robot_launch.py"
+
+# Safe Reactive Control:
+- node:
+    name: "multiplexer"
+    pkg: "basic_node"
+    exec: "multiplexer"
+    remap:
+    - {from: "/cmd_spamped_vel", to: "/cmd_vel"}
+
+# Joystick:
+- node:
+    pkg: joy
+    exec: joy_node
+- node: 
+    pkg: teleop_twist_joy
+    exec: teleop_node
+    param:
+      - {name: "axis_linear.x", value: 1}
+      - {name: "scale_linear.x", value: 0.3}
+      - {name: "axis_angular.yaw",  value: 3}
+      - {name: "scale_angular.yaw", value: 2.0}
+    remap:
+     - {from: "cmd_vel", to: "multi/cmd_teleop"}
+
+# Include basic Tiago simulation
+- include:
+    file: "$(find-pkg-share slam_toolbox)/launch/online_sync_launch.py"
