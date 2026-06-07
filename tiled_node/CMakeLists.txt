@@ -23,4 +23,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# Python scripts
+install( PROGRAMS 
+  scripts/map_subscriber
+  DESTINATION lib/${PROJECT_NAME} )
+
 ament_package()
