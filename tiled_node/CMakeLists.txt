@@ -24,6 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 # Python scripts
+install( DIRECTORY scripts/rosTiled DESTINATION lib/${PROJECT_NAME} )
 install( PROGRAMS 
   scripts/map_subscriber
   DESTINATION lib/${PROJECT_NAME} )
